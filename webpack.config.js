@@ -41,14 +41,12 @@ const plugins = [
 ]
 
 module.exports = {
-  entry: {
-    build: './src/js/main.js'
-  },
+  entry: { build: './src/js/main.js' },
   output,
-  module: {rules},
+  module: { rules },
   // performance: {hints: false},
   plugins,  
-  devServer: {overlay: true}
+  devServer: { overlay: true }
 }
 
 

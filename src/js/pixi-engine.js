@@ -1,10 +1,8 @@
-// import * as PIXI from 'pixi.js'
+import * as PIXI from 'pixi.js'
 
 
 
-const init_pixi = () => {
-  console.log(3131);
-  
+const init_pixi = () => {  
   let app = new PIXI.Application({ 
     width: 1280,         // default: 800
     height: 720,        // default: 600
