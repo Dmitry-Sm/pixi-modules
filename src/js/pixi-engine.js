@@ -1,4 +1,4 @@
-import * as PIXI from 'pixi.js'
+// import * as PIXI from 'pixi.js'
 
 
 
@@ -22,6 +22,7 @@ const init_pixi = () => {
   const container = document.querySelector('.container')
   container.appendChild(app.view)
 
+  return app
 }
 
 
