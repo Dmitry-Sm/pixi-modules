@@ -3,11 +3,12 @@ import * as PIXI from 'pixi.js'
 
 const textures_list = [
   { name: 'cat',
-    path: require('../assets/textures/cat.jpg')
+    path: require('../../assets/textures/cat.jpg')
   }
 ]
 
 const sprites = {}
+const textures = {}
 
 
 const load_textures = async () => {
@@ -23,11 +24,11 @@ const load_textures = async () => {
     loader.load((loader, resources) => {
       for (const texture of textures_list) {    
         sprites[texture.name] = new PIXI.Sprite(resources[texture.name].texture)
+        textures[texture.name] = resources[texture.name].texture
       }
       setTimeout(() => {
-        
         resolve()
-      }, 2000);
+      })
     })
   })
 
@@ -47,4 +48,4 @@ const load_textures = async () => {
 
 
 
-export {load_textures, sprites}
+export {load_textures, sprites, textures}

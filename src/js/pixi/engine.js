@@ -2,8 +2,8 @@ import * as PIXI from 'pixi.js'
 
 
 
-const init_pixi = () => {  
-  let app = new PIXI.Application({ 
+const initPixi = () => {  
+  const app = new PIXI.Application({ 
     width: 1280,         // default: 800
     height: 720,        // default: 600
     // antialias: true,    // default: false
@@ -11,7 +11,6 @@ const init_pixi = () => {
     // resolution: 1.5,       // default: 1
     // scale: 0.5
   })
-
 
 
   app.renderer.backgroundColor = 0x1363ab
@@ -24,4 +23,4 @@ const init_pixi = () => {
 }
 
 
-export {init_pixi}
+export {initPixi}

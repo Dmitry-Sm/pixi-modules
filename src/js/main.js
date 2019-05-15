@@ -1,16 +1,15 @@
 import '../css/style.scss'
 import * as PIXI from 'pixi.js'
-import { init_pixi } from './pixi-engine';
+window.PIXI = PIXI
+import { initPixi } from './pixi/engine';
+import app from './app'
+
+import { load_textures, sprites } from './pixi/textures';
 
 
-import { load_textures, sprites } from './textures';
 
-let app
-
-
-
-const main = async () => {
-  app = init_pixi()
+window.onload = async () => {
+  app.pixi = initPixi()
   await load_textures()
   console.log('Textures loaded')
   
@@ -20,10 +19,9 @@ const main = async () => {
   cat.height = 60
   cat.position.set(10, 200)
 
-  app.stage.addChild(sprites.cat)
+  app.pixi.stage.addChild(sprites.cat)
 }
 
 
-main()
 
 
