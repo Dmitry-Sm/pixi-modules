@@ -27,7 +27,7 @@
     "sass-loader": "^7.1.0",
     "postcss-loader": "^3.0.0",
     "webpack": "^4.29.0",
-    "webpack-bundle-analyzer": "^3.1.0",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14",
     "webpack-runtime-analyzer": "^1.5.0"
