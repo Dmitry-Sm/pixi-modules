@@ -15,8 +15,8 @@ window.onload = async () => {
   
 
   const cat = sprites.cat
-  cat.width = 60
-  cat.height = 60
+  cat.width = 100
+  cat.height = 100
   cat.position.set(10, 200)
 
   app.pixi.stage.addChild(sprites.cat)
